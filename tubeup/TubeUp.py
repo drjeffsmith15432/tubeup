@@ -348,7 +348,7 @@ class TubeUp(object):
             raise Exception(msg)
 
         item.upload(files_to_upload, metadata=metadata, retries=1,
-                    request_kwargs=dict(timeout=9001), delete=True,
+                    request_kwargs=dict(timeout=1), delete=True,
                     verbose=self.verbose, access_key=s3_access_key,
                     secret_key=s3_secret_key)
 
